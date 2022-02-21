@@ -1,0 +1,29 @@
+.features {
+    color: $color-dark;
+    background: #f7f7f7;
+    margin: 70px 0px 0px;
+    font-size: 16px;
+
+    &__container {
+        padding-top: 46px;
+        padding-bottom: 32px;
+    }
+
+    &__col {
+        margin-bottom: 29px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__name{
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    &__text{
+        margin-top: 6px;
+        line-height: 32px;
+    }
+}

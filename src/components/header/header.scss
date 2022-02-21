@@ -1,0 +1,102 @@
+.header {
+    min-height: 57px;
+    background-color: #fff;
+    border-bottom: 1px solid $color-gray;
+    padding: 10px 0px 14px;
+
+    &__top{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        margin-left: 24px;
+    }
+
+    &__connect{
+        margin-left: auto;
+        text-align: right;
+    }
+
+    &__phone{
+        color: $color-dark;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+    
+    &__timework{
+        color: $color-darkgray;
+        font-size: 12px;
+    }
+    
+    &__button{
+        display: none;
+    }
+
+    &__mobile{
+        display: none;
+    }
+
+    &__menu{
+        display: none;
+    }
+}
+
+.hamburger {
+    align-items: center;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    color: inherit;
+    text-transform: none;
+    border: 0;
+    overflow: visible;
+
+    &__box {
+        width: 41px;
+        display: inline-block;
+        position: relative;
+        perspective: 80px;
+    }
+
+    &__inner {
+        width: 41px;
+        height: 4px;
+        background-color: $color-dark;
+        border-radius: 20px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        display: block;
+        top: 50%;
+        margin-top: -2px;
+        transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+            background-color 0s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            width: inherit;
+            height: inherit;
+            background-color: inherit;
+            border-radius: inherit;
+            position: absolute;
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            transition: transform 0s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+        }
+
+        &::after {
+            bottom: -10px;
+        }
+
+        &:before {
+            top: -10px;
+        }
+    }
+}
