@@ -1,3 +1,5 @@
+import Icon from "../../static/icons"
+
 const Features = () => {
     return (
         <section className="features">
@@ -6,7 +8,7 @@ const Features = () => {
                 <ul className="features__row row">
                     <li className="features__col col">
                         <div className="features__item d-flex">
-                            <img src="" alt="" className="features__icon" />
+                            <Icon icon='delivery' name='features__icon' />
                             <div className="features__info">
                                 <p className="features__name">Доставка и монтаж</p>
                                 <p className="features__text">Мы привезём и соберём мебель в удобное вам время</p>
@@ -15,7 +17,7 @@ const Features = () => {
                     </li>
                     <li className="features__col col">
                         <div className="features__item d-flex">
-                            <img src="" alt="" className="features__icon" />
+                            <Icon icon='lock' name='features__icon'/>
                             <div className="features__info">
                                 <p className="features__name">Безопасная оплата</p>
                                 <p className="features__text">
@@ -26,7 +28,7 @@ const Features = () => {
                     </li>
                     <li className="features__col col">
                         <div className="features__item d-flex">
-                            <img src="" alt="" className="features__icon" />
+                            <Icon icon='badge' name='features__icon' />
                             <div className="features__info">
                                 <p className="features__name">Гарантия 2 года</p>
                                 <p className="features__text">Мы уверены, что наша мебель прослужит долго</p>
@@ -35,7 +37,7 @@ const Features = () => {
                     </li>
                     <li className="features__col col">
                         <div className="features__item d-flex">
-                            <img src="" alt="" className="features__icon" />
+                            <Icon icon='sheet' name='features__icon' />
                             <div className="features__info">
                                 <p className="features__name">Экологичные материалы</p>
                                 <p className="features__text">Класс эмиссии Е1 позволяет использовать их даже в мед. учереждениях</p>

@@ -25,5 +25,18 @@
     &__text{
         margin-top: 6px;
         line-height: 32px;
+        color: $color-darkgray;
+    }
+
+    &__icon{
+        min-width: 45px;
+        max-width: 45px;
+        max-height: 46px;
+        flex-shrink: 1;
+        margin-right: 32px;
+    }
+
+    &__item{
+        align-items: flex-start;
     }
 }

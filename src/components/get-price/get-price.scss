@@ -44,9 +44,12 @@
 
     &__descr {
         margin: 6px 0px 0px;
+        line-height: 32px;
     }
 
     &__button {
         margin: 14px 0px 0px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }

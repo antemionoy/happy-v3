@@ -2,7 +2,7 @@ const Promo = () => {
     return (
         <section className="promo">
             <div className="promo__container container">
-                <div className="promo__grid">
+                <div className="promo__grid d-flex">
                     <div className="promo__info">
                         <h1 className="promo__title title title_h1">
                             <span className="promo__title-mark">

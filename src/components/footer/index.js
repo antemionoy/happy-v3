@@ -35,25 +35,25 @@ const Footer = () => {
                     </div>
                     <div className="footer__col col footer__connect">
                         <p className="footer__sentence">Вызов дизайнера и дизайн-проект бесплатно!</p>
-                        <button type="button" className="footer__button button">Консультация дизайнера</button>
-                        <button type="button" className="footer__button button">Обратный звонок</button>
+                        <button type="button" className="footer__button button button_size-lg">Консультация дизайнера</button>
+                        <button type="button" className="footer__button button button_border button_color-yellow button_size-lg">Обратный звонок</button>
                     </div>
                     <div className="footer__col col footer__main d-flex">
-                        <a href="#" className="footer__logo logo">
-                            <img src="" alt="" className="logo__image" />
+                        <a href="/" className="footer__logo logo">
+                            <img src="/images/logos/logo.svg" alt="" className="logo__image" />
                         </a>
                         <p className="footer__text">Один телефон для любых вопросов</p>
                         <a href="#" className="footer__phone">+7 (812) 677-75-85</a>
-                        <button type="button" className="footer__button button">Оплата онлайн</button>
+                        <button type="button" className="footer__button button button_border button_color-yellow button_size-lg">Оплата онлайн</button>
                     </div>
                 </div>
                 <div className="footer__bottom row d-flex">
                     <div className="footer__col col">
                         <ul className="footer__social d-flex social">
-                            <li className="soctial__item">
+                            <li className="social__item">
                                 <Icon icon='vk' name='social__icon'/>
                             </li>
-                            <li className="soctial__item">
+                            <li className="social__item">
                                 <Icon icon='insta' name='social__icon'/>
                             </li>
                         </ul>
@@ -62,12 +62,15 @@ const Footer = () => {
                         <a href="#" className="footer__policy policy">Политика конфиденциальности</a>
                     </div>
                     <div className="footer__col col">
-                        <ul className="footer__paylist paylist">
+                        <ul className="footer__paylist paylist d-flex">
                             <li className="paylist__item">
-                                <img src="" alt="" className="paylist__image" />
+                                <Icon icon='vk' name='paylist__icon'/>
                             </li>
                             <li className="paylist__item">
-                                <img src="" alt="" className="paylist__image" />
+                                <Icon icon='vk' name='paylist__icon'/>
+                            </li>
+                            <li className="paylist__item">
+                                <Icon icon='vk' name='paylist__icon'/>
                             </li>
                         </ul>
                     </div>

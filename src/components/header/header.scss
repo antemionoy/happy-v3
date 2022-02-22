@@ -32,6 +32,8 @@
     
     &__button{
         display: none;
+        padding: 20px 30px;
+        margin-left: 20px;
     }
 
     &__mobile{
@@ -40,6 +42,12 @@
 
     &__menu{
         display: none;
+    }
+
+    @media screen and (min-width: 960px) {
+        &__button{
+            display: block;
+        }
     }
 }
 

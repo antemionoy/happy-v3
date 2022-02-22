@@ -11,6 +11,11 @@
             color: $color-main;
         }
     }
+
+    &__grid{
+        flex-direction: column;
+    }
+
     &__description{
         position: relative;
         font-weight: 700;
@@ -85,6 +90,12 @@
             height: 51px;
             background-color: #0498CE;
             z-index: -1;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        &__grid{
+            flex-direction: row;
         }
     }
 }

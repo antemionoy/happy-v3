@@ -9,7 +9,7 @@ const GetPrice = () => {
                             <div className="get-price__circle d-flex"></div>
                             <p className="get-price__name">У меня есть дизайн-проект</p>
                             <p className="get-price__descr">Мы рассчитаем стоимость вашего проекта за несколько минут</p>
-                            <button type="button" className="get-price__button button">Узнать стоимость</button>
+                            <button type="button" className="get-price__button button button_size-lg">Узнать стоимость</button>
                         </div>
                     </div>
                     <div className="get-price__column">
@@ -17,7 +17,7 @@ const GetPrice = () => {
                             <div className="get-price__circle d-flex"></div>
                             <p className="get-price__name">Нет дизайн-проекта</p>
                             <p className="get-price__descr">Мы создадим уникальный проект дизайна по вашим размерам и рассчитаем стоимость всего за пару минут</p>
-                            <button type="button" className="get-price__button button">Нужны проект и стоимость</button>
+                            <button type="button" className="get-price__button button button_size-lg">Нужны проект и стоимость</button>
                         </div>
                     </div>
                 </div>

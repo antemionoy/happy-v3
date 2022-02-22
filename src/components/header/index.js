@@ -10,7 +10,7 @@ const Header = () => {
                     </button>
                     <a href="" className="header__logo logo">
                         <picture className="logo__picture">
-                            <source media="(min-width: 960px)" srcset="/images/logos/logo.svg" />
+                            <source media="(min-width: 1440px)" srcset="/images/logos/logo.svg" />
                             <img src="/images/logos/logo__mobile.svg" alt="" className="logo__image" />
                         </picture>
                     </a>
