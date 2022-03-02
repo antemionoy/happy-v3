@@ -1,0 +1,473 @@
+$font-main: "Inter", Verdana, Arial, sans-serif;
+
+$font-secondary: "EB Garamond", Verdana, Arial, sans-serif;
+
+$color-primary: #2979ff;
+
+$color-dark: #2E3831;
+
+$color-warning: #d50000;
+
+$color-sucess: #11c339;
+
+$color-main: #FECF28;
+
+$color-green: #b4e13d;
+
+$color-blue: #3779bd;
+
+$color-red: #aa1916;
+
+$color-darkblue: #02225c;
+
+$color-skyblue: #5fc3f1;
+
+$color-gray: #C8C7C7;
+
+$color-darkgray: #8E8E8E;
+
+$box-shadow-default: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+$spacing: 20px;
+
+$spacing-double: ($spacing * 2);
+
+$letter: 0.02em;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    text-decoration: underline;
+}
+
+a {
+    color: $color-blue;
+    text-decoration: none;
+}
+
+p:not([class]) {
+    margin: 0px 0px 10px;
+}
+
+ul:not([class]) {
+    list-style: none;
+}
+
+ul,
+ol {
+    //margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class] {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img.lazy[data-src] {
+    filter: blur(10px);
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+body,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: $font-main;
+    min-width: 320px;
+    font-size: rem(16px);
+    font-weight: 400;
+    background-color: #fff;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1560px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: left 0.4s ease-in-out;
+    left: 0;
+}
+
+.main {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+a,
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    display: inline-block;
+    outline: none;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+:root .row {
+    margin-left: -$spacing;
+    margin-right: -$spacing;
+    list-style: none;
+}
+
+:root .row-big {
+    margin-left: -$spacing-double;
+    margin-right: -$spacing-double;
+}
+
+:root .col {
+    padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+:root .col-big {
+    padding-left: $spacing-double;
+    padding-right: $spacing-double;
+}
+
+.col-1 {
+    width: 8.33333333%;
+}
+
+.col-2 {
+    width: 16.66666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 101;
+}
+
+.stop {
+    position: relative;
+    z-index: 101;
+}
+
+// title
+h1 {
+    font-size: rem(36px);
+    line-height: rem(38px);
+    margin: 20px 0px 24px;
+}
+
+h2 {
+    font-size: rem(32px);
+    line-height: rem(42px);
+    margin: 20px 0px 24px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: rem(44px);
+    line-height: rem(48px);
+    margin: 15px 0px 22px;
+}
+
+h4 {
+    font-size: rem(24px);
+    line-height: rem(31px);
+}
+
+h5 {
+    font-size: rem(16px);
+    line-height: rem(24px);
+}
+
+h6 {
+    font-size: rem(14px);
+    line-height: rem(24px);
+    font-weight: normal;
+}
+
+@media (min-width: 520px) {
+    h1 {
+        font-size: 42px;
+        line-height: 28px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 22px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 20px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+
+.title {
+    color: $color-dark;
+    margin: 0px;
+
+    &_h1 {
+        @extend h1;
+    }
+
+    &_h2 {
+        @extend h2;
+    }
+
+    &_h3 {
+        @extend h3;
+    }
+
+    &_h4 {
+        @extend h4;
+    }
+
+    &_h5 {
+        @extend h5;
+    }
+
+    &_h6 {
+        @extend h6;
+    }
+
+    &_center {
+        text-align: center;
+    }
+
+    &_color-white {
+        color: #fff;
+    }
+
+    &_color-blue {
+        color: $color-blue;
+    }
+
+    &_color-red {
+        color: $color-red;
+    }
+
+    &_color-yellow {
+        color: $color-main;
+    }
+}
+
+.box-center {
+    text-align: center;
+}
+
+.visually-hidden {
+    visibility: hidden;
+
+    &_clip {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+}
+
+.button {
+    padding: 15px 27px 15px;
+    min-width: 195px;
+    background-color: $color-main;
+    color: $color-dark;
+    font-weight: 700;
+    letter-spacing: $letter;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    border-radius: 2px;
+    text-decoration: none;
+
+    &_border {
+        border-style: solid;
+        border-width: 2px;
+        background-color: transparent;
+        border-color: inherit;
+    }
+
+    &_back {
+        &-red {
+            background-color: $color-red;
+            color: #fff;
+        }
+
+        &-blue {
+            background-color: $color-blue;
+            color: #fff;
+        }
+
+        &-yellow {
+            border-color: $color-main;
+            color: #fff;
+        }
+    }
+
+    &_color {
+        &-white {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        &-yellow {
+            border-color: $color-main;
+        }
+
+        &-dark {
+            background-color: $color-dark;
+            color: #fff;
+        }
+
+        &-red {
+            border-color: $color-red;
+            color: $color-red;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}

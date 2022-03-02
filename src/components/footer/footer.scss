@@ -1,0 +1,64 @@
+.footer {
+    &__top {
+        padding: 28px 0px 20px;
+        flex-direction: column;
+    }
+    &__bottom {
+        padding: 20px 0px 20px;
+        background-color: $color-dark;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__connect {
+        margin: 58px 0px 0px;
+    }
+
+    &__col {
+        flex: 1;
+    }
+
+    &__main {
+        flex-direction: column;
+        align-items: center;
+        margin: 37px 0px 0px;
+        justify-content: center;
+        font-weight: 500;
+    }
+
+    &__text {
+        font-size: 21px;
+        line-height: 32px;
+        margin: 18px 0px 0px;
+    }
+    &__phone {
+        color: #000;
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    &__button {
+        margin: 18px 0px 0px;
+        width: 100%;
+    }
+}
+
+.menu-footer {
+    &__item {
+        flex: 1 0 50%;
+        margin-top: 28px;
+        color: #000;
+        line-height: 19px;
+    }
+
+    &__link {
+        color: inherit;
+    }
+}
+
+.social {
+    &__icon {
+        width: 32px;
+        height: 32px;
+    }
+}

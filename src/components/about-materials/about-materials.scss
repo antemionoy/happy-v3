@@ -1,0 +1,32 @@
+.about-materials {
+    margin: 29px 0px 0px;
+    padding: 209px 0px 49px;
+    background: linear-gradient(0deg, #ffffff 29.94%, rgba(255, 255, 255, 0) 100%),
+        url("/images/about-materials_back.jpeg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: $color-dark;
+
+    &__container{
+        padding: 0px 30px;
+    }
+
+    &__descr {
+        margin: 0px 0px 15px;
+        line-height: 32px;
+
+        &:last-child {
+            margin: 0px;
+        }
+    }
+
+    &__title {
+        margin: 0px 0px 24px;
+    }
+
+    &__button{
+        margin: 17px 0px 0px;
+    }
+}
