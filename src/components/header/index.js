@@ -3,10 +3,6 @@ const Header = () => {
         <section className="header">
             <div className="header__container container">
                 <div className="header__top d-flex">
-                    <div className="header__city city d-flex">
-                        <div className="city__icon"></div>
-                        <p className="city__text">Санкт-Петербург</p>
-                    </div>
                     <button type="button" className="header__hamburger hamburger d-flex">
                         <div className="hamburger__box">
                             <div className="hamburger__inner"></div>
