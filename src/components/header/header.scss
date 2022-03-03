@@ -40,14 +40,45 @@
         display: none;
     }
 
-    &__menu{
+    &__nav{
+        justify-content: center;
+        margin: 27px 0px 0px;
         display: none;
+    }
+
+    &__city{
+        display: none;
+        font-size: 16px;
+        line-height: 1;
+        color: $color-dark;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 960px) {
         &__button{
             display: block;
         }
+    }
+
+    @media screen and (min-width: 1440px) {
+       &__hamburger{
+           display: none;
+       }
+       &__top{
+           justify-content: space-between;
+       }
+       &__connect{
+           margin: 0px;
+       }
+       &__nav{
+           display: flex;
+       }
+       &__logo{
+           margin: 0px auto;
+       }
+       &__city{
+           display: block;
+       }
     }
 }
 
@@ -106,5 +137,20 @@
         &:before {
             top: -10px;
         }
+    }
+}
+
+.menu-header{
+    margin-left: -24px;
+    margin-right: -24px;
+
+    &__item{
+        padding: 0px 24px;
+        line-height: 1;
+        color: #000;
+    }
+
+    &__link{
+        color: inherit;
     }
 }

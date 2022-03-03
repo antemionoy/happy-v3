@@ -1,20 +1,24 @@
 const Promo = () => {
+    
     return (
         <section className="promo">
             <div className="promo__container container">
                 <div className="promo__grid d-flex">
-                    <div className="promo__info">
-                        <h1 className="promo__title title title_h1">
-                            <span className="promo__title-mark">
-                                Просто и быстро.
-                            </span>
-                            Новая кухня по вашим размерам
-                        </h1>
-                        <p className="promo__description">
-                            В этом месяце скидки на все кухни <span className="promo__discount">-70%</span>
-                        </p>
+                    <div className="promo__col">
+                        <div className="promo__info">
+                            <h1 className="promo__title title title_h1">
+                                <span className="promo__title-mark">
+                                    Просто и быстро.
+                                </span>
+                                Новая кухня по вашим размерам
+                            </h1>
+                            <p className="promo__description">
+                                В этом месяце скидки на все кухни <span className="promo__discount">-70%</span>
+                            </p>
+                        </div>
                     </div>
-                    <div className="promo__content">
+                    <div className="promo__content promo__col">
+
                         <ul className="promo__list">
                             <li className="promo__item">
                                 <img src="images/promo__image_1.jpeg" alt="" className="promo__image" />

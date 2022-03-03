@@ -5,7 +5,7 @@ const Features = () => {
         <section className="features">
             <div className="features__container container">
                 <h2 className="features__title title tilte_h2 visually-hidden visually-hidden_clip">Преимущества</h2>
-                <ul className="features__row row">
+                <ul className="features__row row d-flex wrap">
                     <li className="features__col col">
                         <div className="features__item d-flex">
                             <Icon icon='delivery' name='features__icon' />

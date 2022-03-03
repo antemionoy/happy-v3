@@ -4,6 +4,10 @@
     margin: 70px 0px 0px;
     font-size: 16px;
 
+    &__row{
+        justify-content: space-between;
+    }
+
     &__container {
         padding-top: 46px;
         padding-bottom: 32px;
@@ -11,6 +15,8 @@
 
     &__col {
         margin-bottom: 29px;
+        min-width: 320px;
+        flex: 1 0 25%;
 
         &:last-child {
             margin-bottom: 0px;
@@ -38,5 +44,44 @@
 
     &__item{
         align-items: flex-start;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin: 43px 0px 0px;
+
+        &__row{
+            padding: 0px 60px;
+        }
+        &__col{
+            margin-bottom: 21px;
+            flex: 1 0 50%;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin: 111px 0px 0px;
+        &__container{
+            padding-top: 52px;
+            padding-bottom: 18px;
+        }
+        &__row{
+            padding: 0px;
+        }
+        &__col{
+            flex: 1 0 25%;
+        }
+        &__item{
+            flex-direction: column;
+        }
+        &__info{
+            margin: 27px 0px 0px;
+        }
+        &__text{
+            max-width: 80%;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        margin: 49px 0px 0px;
     }
 }

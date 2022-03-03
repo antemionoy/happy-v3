@@ -9,15 +9,15 @@
     text-align: center;
     color: $color-dark;
 
-    &__container{
+    &__container {
         padding: 0px 30px;
     }
 
     &__descr {
-        margin: 0px 0px 15px;
+        margin: 0px 0px 23px;
         line-height: 32px;
 
-        &:last-child {
+        &:last-of-type {
             margin: 0px;
         }
     }
@@ -26,7 +26,64 @@
         margin: 0px 0px 24px;
     }
 
-    &__button{
+    &__button {
         margin: 17px 0px 0px;
+    }
+
+    @media screen and (min-width: 960px) {
+        // background: linear-gradient(93.56deg, #ffffff 3.94%, rgba(255, 255, 255, 0) 76.45%),
+        //     url("/images/about-materials-desk_back.png");
+        background: url("/images/about-materials-desk_back.png");
+        background-position: center center;
+        background-size: cover;
+        padding: 86px 0px 49px;
+        margin: 0px;
+
+        &__container {
+            padding: 0px 20px;
+        }
+
+        &__info {
+            max-width: 65%;
+            margin-left: auto;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 53px 0px 61px;
+
+        &__info {
+            max-width: 50%;
+            margin-right: 70px;
+        }
+
+        &__title {
+            margin: 0px 0px 18px;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        padding: 156px 0px 142px;
+
+        &__info {
+            margin-right: 0px;
+        }
+
+        &__title{
+            margin: 0px 0px 44px;
+        }
+
+        &__descr {
+            padding: 0px 70px;
+
+            &:last-of-type {
+                margin-top: 57px;
+                font-weight: 700;
+            }
+        }
+
+        &__button{
+            margin: 11px 0px 0px;
+        }
     }
 }

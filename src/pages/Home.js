@@ -7,7 +7,7 @@ import {
     Features,
     Footer
 }
-from "../components"
+from "../components/"
 
 export const Home = () => {
     return(
@@ -18,7 +18,7 @@ export const Home = () => {
             <GetPrice/>
             <Populars/>
             <Features/>
-            <Footer/>
+            <Footer />
         </>
     )
 }

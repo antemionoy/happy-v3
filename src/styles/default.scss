@@ -129,10 +129,6 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    width: 100%;
-    max-width: 1560px;
-}
 
 .wrapper {
     width: 100%;
@@ -153,6 +149,10 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.d-grid{
+    display: grid;
 }
 
 .wrap {
@@ -178,9 +178,9 @@ button {
 }
 
 .container {
-    width: 1170px;
+    width: 100%;
+    max-width: 1610px;
     margin: 0 auto;
-    max-width: 100%;
     padding-left: $spacing;
     padding-right: $spacing;
 }
@@ -192,23 +192,23 @@ button {
     padding-right: $spacing;
 }
 
-:root .row {
+.row {
     margin-left: -$spacing;
     margin-right: -$spacing;
     list-style: none;
 }
 
-:root .row-big {
+.row-big {
     margin-left: -$spacing-double;
     margin-right: -$spacing-double;
 }
 
-:root .col {
+ .col {
     padding-left: $spacing;
     padding-right: $spacing;
 }
 
-:root .col-big {
+.col-big {
     padding-left: $spacing-double;
     padding-right: $spacing-double;
 }
@@ -313,12 +313,12 @@ h6 {
 
 @media (min-width: 520px) {
     h1 {
-        font-size: 42px;
-        line-height: 28px;
+        font-size: 44px;
+        line-height: 50px;
     }
     h2 {
         font-size: 32px;
-        line-height: 22px;
+        line-height: 42px;
     }
     h3 {
         font-size: 22px;
@@ -330,14 +330,18 @@ h6 {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
     h1 {
-        font-size: 34px;
-        line-height: 40px;
+        font-size: 54px;
+        line-height: 60px;
     }
     h2 {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 47px;
+        line-height: 57px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 20px;
     }
 }
 
@@ -407,8 +411,8 @@ h6 {
     }
 }
 
-$button-padding_md: 21px 27px 18px;
-$button-padding_lg: 22px 27px 21px;
+$button-padding_md: 20px 27px 19px;
+$button-padding_lg: 24px 27px 22px;
 
 .button {
     padding: 16px 27px 15px;
