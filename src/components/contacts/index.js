@@ -12,7 +12,9 @@ const Contacts = () => {
     <div className="contacts">
       <div className="contacts__map"></div>
       <div className="container contacts__container">
-        <Breadcrumbs className="contacts__breadcrumbs" items={crumbs} />
+        <div className="contacts__breadcrumbs">
+          <Breadcrumbs items={crumbs} />
+        </div>
         <h1 className="contacts__heading h1">Контакты</h1>
         <div className="contacts__item">
           <p className="contacts__title h3">Адрес</p>

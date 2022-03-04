@@ -1,4 +1,12 @@
 .contacts {
+    &__map {
+        display: none;
+    }
+
+    &__breadcrumbs {
+        display: none;
+    }
+
     &__heading {
         margin: 26px 0 38px;
     }
@@ -25,7 +33,9 @@
         display: flex;
 
         &__map {
+            display: block;
             width: 46.9%;
+            min-height: 100vh;
             background-color: #ccc;
         }
 
@@ -36,6 +46,7 @@
         }
 
         &__breadcrumbs {
+            display: block;
             margin-top: 16px;   
         }
 
